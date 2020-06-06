@@ -1,0 +1,24 @@
+
+{% extends "base.html" %}
+{% block page_content %}
+
+
+
+<div class="container-fluid"   style="padding-bottom: 20rem;">
+    
+    <div class="col-md-8 offset-md-2">
+        <h1 style="padding-top: 5rem;">Events</h1>
+        <hr>
+        {% for post in posts %}
+        <h2><a href="{% url 'events_index' post.uuid %}">{{ post.title }}</a></h2>
+        <small>
+            {{ post.created_on.date }} |&nbsp;
+        </small>
+        <p>{{ post.description }}</p>
+        {% endfor %}
+    </div>
+
+
+</div>
+
+{% endblock %}

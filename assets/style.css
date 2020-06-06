@@ -1,0 +1,163 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+
+.carousel-item {
+  height: 100vh;
+  min-height: 350px;
+  background: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+footer{
+  background-color: #40474e;
+  color:white;
+  padding:1rem 0 2rem;
+  padding-top:1rem ;
+
+}
+
+footer img{
+
+  margin:1rem 0;
+}
+.body{
+  overflow-x:  hidden;
+  font-family: 'Lato', sans-serif;
+  color: #505962;
+}
+
+/* Navigation */
+.navbar{
+  text-transform: uppercase;
+  font-weight : 700;
+  font-size:.9rem;
+  letter-spacing: .1rem;
+  background-color: white !important;
+}
+.navbar-brand img{
+/*height*/  
+  
+}
+.navbar-nav li{
+  padding-right: rem;
+}
+
+.navbar-dark .navbar-nav .nav-link{
+  padding-top: .8rem;
+}
+.navbar img{
+  width: 20%;
+  height: auto;
+}
+
+
+/* landing page */
+
+.home-inner{
+  background: url(photo1.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+
+.caption{
+  bottom: 10%;
+  padding-left: 15rem;
+  width: 100%;
+  max-width: 100% ;
+  position: absolute;
+  top: 38%;
+  z-index: 1;
+  color: white;
+  text-transform: uppercase;
+}
+
+.caption h1{
+  font-size:  3.8rem;
+  font-weight: 700;
+  letter-spacing:  .3rem;
+  text-shadow: .1rem .1rem .8rem black;
+  padding-bottom: 1rem;
+}
+.caption h3{
+  font-size: 2rem;
+  text-shadow: .1rem .1rem .5rem black;
+  padding-bottom: 1.5rem;
+
+}
+.btn-lg{
+
+  border-width: medium;
+  border-radius: 0;
+  padding: .6rem 1.3rem;
+  font-size: 1.1rem;
+}
+
+
+/*============= COURSE SECTION =============*/
+
+.narrow {
+  width: 75%;
+  margin: 1.5rem auto;
+  padding-top: 2rem;
+}
+.narrow h1 {
+    font-size: 2.4rem;
+  }
+.btn-secondary {
+  border-width: medium;
+  border-radius: 0;
+  padding: .6rem 1.2rem;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  margin: 1rem;
+  border-color: #1EBBA3;
+  background-color: #1EBBA3;
+  color: white;
+}
+.btn-secondary:hover,
+.btn-secondary:focus {
+  border-color: #189582;
+  background-color: #189582;
+  color: white;
+}
+
+.sticky-bottom col-md-4{
+  color: white;
+  font-size: 20px;
+}
+
+.goal col-sm-4{
+   padding:10px; min-height:100%; width:33.3%;
+  }
+
+
+
+
+
+
+/*============ BOOTSTRAP BREAK POINTS:
+
+Extra small (xs) devices (portrait phones, less than 576px)
+No media query since this is the default in Bootstrap
+
+Small (sm) devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+Medium (md) devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+Large (lg) devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+Extra (xl) large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+
+=============*/

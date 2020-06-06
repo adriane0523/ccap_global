@@ -1,0 +1,96 @@
+
+{% load static%}
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>CCAP</title>
+
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type ="text/css" href = "{%static '/style.css' %}">
+  <link rel="stylesheet" href = "{%static '/fixed.css' %}">
+  
+  
+<nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light" id = "nav1">
+
+      <a class="navbar-brand" href="#"><img src="{% static 'logo.png' %}"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+
+          <li class="nav-item active">
+            <a class="nav-link" href="{% url 'landing_page' %}">Home</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="{% url 'projects' %}">Projects</a>
+          </li>
+          
+          <li class="nav-item active">
+            <a class="nav-link" href="{% url 'events' %} ">Events</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Team</a>
+          </li>
+
+          <li class="nav-item active">
+            <a class="nav-link" href="{% url 'contact' %}">contact</a>
+          </li>
+
+
+
+        
+        </ul>
+      </div>
+
+
+</nav>
+
+
+
+
+
+
+<div class="container-fluid">
+    {% block page_content %}{% endblock %}
+</div>
+
+
+
+
+<div id ="contact" class="offset ">
+	<footer>
+    <div class ="text-center "> 
+      
+      <img src="{% static 'logo.png' %}" style="height:100px; width: auto;">
+
+      <h5>Connect with us</h5>
+      <p>
+      <a href="https://www.facebook.com/CCAPAcrossTheMap/">Facebook </a> | 
+      <a href="https://www.instagram.com/ccapacrossthemap/">Instagram </a> |
+      <a href="{% url 'contact' %} ">Email</a> <br>
+    </p>
+
+
+      <small>
+      <img src="{% static 'footer.png' %}" >
+      <p>This work is licensed under a Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License.    </p>
+      </small>
+    </div>
+    
+
+
+	</footer>	
+</div>
+
+
+
+
+</html>

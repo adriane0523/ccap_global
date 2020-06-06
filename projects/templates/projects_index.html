@@ -1,0 +1,25 @@
+
+                        
+                     
+
+                          
+{% extends "base.html" %}
+{% block page_content %}
+
+
+
+<div class="container-fluid" style="padding-top: 5rem;">
+    
+    <div class="col-md-8 offset-md-2">
+        <h1> {{posts.title}} </h1>
+      
+    
+        {{ posts.content | safe }}
+
+        
+    </div>
+
+
+</div>
+
+{% endblock %}
