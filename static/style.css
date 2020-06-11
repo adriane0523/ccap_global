@@ -37,7 +37,7 @@ footer img{
   font-weight : 700;
   font-size:.9rem;
   letter-spacing: .1rem;
-  background-color: rgba(255, 255, 255, 0.6)!important;
+  background-color: white !important;
 }
 .navbar-brand img{
 /*height*/  
@@ -137,6 +137,12 @@ footer img{
 .goal col-sm-4{
    padding:10px; min-height:100%; width:33.3%;
   }
+
+
+
+
+
+
 /*============ BOOTSTRAP BREAK POINTS:
 
 Extra small (xs) devices (portrait phones, less than 576px)
