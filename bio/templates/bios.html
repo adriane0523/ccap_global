@@ -1,6 +1,4 @@
-
 {% extends "base.html" %}
-{% load static %}
 {% block page_content %}
 
 
@@ -8,10 +6,13 @@
 <div class="container-fluid" style="padding-bottom: 20rem;">
     
     <div class="col-md-8 offset-md-2">
-        <h1 style="padding-top: 5rem;"><hr class="inline_header_line">Projects<hr class="inline_header_line"></h1>
+
+        <h1 style="padding-top: 5rem;">
+            <hr>Meet the Team<hr>
+        </h1>
         <hr>
-        {% for post in posts %}
-        <h2><a href="{% url 'projects_index' post.uuid %}">{{ post.title }}</a></h2>
+        {% for bio in bios %}
+        <h2><a href="{% url 'projects_index' post.uuid %}">{{ bio.name }}</a></h2>
         <small>
             {{ post.created_on.date }} |&nbsp;
         </small>
