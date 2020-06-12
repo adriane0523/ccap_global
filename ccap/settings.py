@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'sendmail',
     'events',
     'projects',
+    'bios',
     'ckeditor',
     'ckeditor_uploader',
 ]

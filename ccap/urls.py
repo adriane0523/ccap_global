@@ -27,6 +27,7 @@ urlpatterns = [
     path('projects/',include("projects.urls")),
     path('events/',include("events.urls")),
     path('ckeditor/', include('ckeditor_uploader.urls')),
+    path('bios/', include("bios.urls")),
     
 ]
 

@@ -11,15 +11,17 @@
             <hr>Meet the Team<hr>
         </h1>
         <hr>
-        {% for bio in bios %}
-        <h2><a href="{% url 'projects_index' post.uuid %}">{{ bio.name }}</a></h2>
-        <small>
-            {{ post.created_on.date }} |&nbsp;
-        </small>
-        <p>{{ post.description }}</p>
+        {% for people in group %}
+        <div class="row">
+            {% for person in people %} 
+            <div class="col-4">
+                <h2>{{ person }}</a></h2>
+            </div>
+            {% endfor %}
+        </div>
+        
         {% endfor %}
     </div>
-
 
 </div>
 

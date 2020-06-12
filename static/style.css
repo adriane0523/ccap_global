@@ -101,10 +101,15 @@ footer img{
 }
 
 /* bio */
-.hr_inline_header{
-  display: inline;
-  width: 40%;
+
+.col-4{
+  float: left;
 }
+
+.col-4_last{
+  clear: both;
+}
+
 
 /*============= COURSE SECTION =============*/
 

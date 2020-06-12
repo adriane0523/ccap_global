@@ -8,7 +8,7 @@
 <div class="container-fluid" style="padding-bottom: 20rem;">
     
     <div class="col-md-8 offset-md-2">
-        <h1 style="padding-top: 5rem;"><hr class="inline_header_line">Projects<hr class="inline_header_line"></h1>
+        <h1 style="padding-top: 5rem;"><hr class="hr_inline_header">Projects<hr class="hr_inline_header"></h1>
         <hr>
         {% for post in posts %}
         <h2><a href="{% url 'projects_index' post.uuid %}">{{ post.title }}</a></h2>
