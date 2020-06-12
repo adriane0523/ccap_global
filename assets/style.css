@@ -100,19 +100,6 @@ footer img{
   font-size: 1.1rem;
 }
 
-/* team page */
-.inline_header_line{
-  display: inline;
-  margin-top: 0.5rem;
-  margin-bottom: 0.5rem;
-  margin-left: auto;
-  margin-right: auto;
-  border-style: inset;
-  border-width: 1px;
-  width: 20%
-}
-
-
 
 /*============= COURSE SECTION =============*/
 
