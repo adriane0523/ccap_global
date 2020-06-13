@@ -2,6 +2,19 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 
+.underline{
+ 
+  display:inline-block;
+  border-bottom:3px solid #f39cc4;
+  padding-bottom:0px;
+
+}
+
+a{
+  color: #f39cc4;
+}
+
+
 
 .carousel-item {
   height: 100vh;

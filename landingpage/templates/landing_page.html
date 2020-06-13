@@ -5,17 +5,19 @@
 
 
 
-<div class="caption"  >
+<div class="caption" >
+ <!---- <img src="{% static 'logo.png' %}" style="height:8rem; width: auto; margin: 1rem;"> -->
 
-    <h1>Welcome to</h1>
-    <h1>CCAP Across The Map</h1>
-    <h3>Bringing awareness and prevention from cervical cancer</h3>
+    <h1 style = "padding-top: 10rem">CCAP Across The Map</h1>
+    <h5>Bringing awareness and prevention from cervical cancer</h5>
+   
+
 
 </div>
 <body>
 
   <header style="padding-top: 5rem">
-    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" >
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="3000" >
       <ol class="carousel-indicators">
         <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
         <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
@@ -73,8 +75,8 @@
 
 <div id ="background">
     <div class="col-12 narrow" style="padding-top: 5rem;">
-        <h1>About Us</h1>
-        <p class = "lead">Cervical cancer is one of the most highly preventable cancers because there's a vaccine, the HPV
+        <div class = "underline"> <h1 style="color: #2fbcbb;"> About Us </h1> </div>
+        <p style = "padding-top: 1rem" class = "lead">Cervical cancer is one of the most highly preventable cancers because there's a vaccine, the HPV
             vaccine, that prevents most of it. HPV is approximated to cause 70% of cervical cancer cases
             (WHO). Thus, providing access to the HPV vaccine is imperative. Additionally, cervical cancer
             is very treatable when caught in the early stages, so it is really important for women to get
@@ -111,60 +113,56 @@
 
 <div id = "goal">
 
+<div class = "text-center jumbotron">
+    <div class = "underline"> <h1 style="color: #2fbcbb;"> Our Impact </h1> </div>
+    <p style = "padding-top: 1rem">At CCAP Across the Map, we work very hard to make difference in cervical cancer awarness and prevention all across the world. <br> We give credit to all our 
+      <a href = "#"> team members </a> who work hard to run our  <a href = "{% url 'projects'%}">projects </a> and   <a href = "{% url 'events'%}">events</a> </p>
 
-    <div class="row text-center jumbotron">
+    <div class="row" style="padding-top:1rem">
        
             <div class = "col-sm-3"  >
-              <svg class="bi bi-book" width="5em" height="5em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" d="M3.214 1.072C4.813.752 6.916.71 8.354 2.146A.5.5 0 0 1 8.5 2.5v11a.5.5 0 0 1-.854.354c-.843-.844-2.115-1.059-3.47-.92-1.344.14-2.66.617-3.452 1.013A.5.5 0 0 1 0 13.5v-11a.5.5 0 0 1 .276-.447L.5 2.5l-.224-.447.002-.001.004-.002.013-.006a5.017 5.017 0 0 1 .22-.103 12.958 12.958 0 0 1 2.7-.869zM1 2.82v9.908c.846-.343 1.944-.672 3.074-.788 1.143-.118 2.387-.023 3.426.56V2.718c-1.063-.929-2.631-.956-4.09-.664A11.958 11.958 0 0 0 1 2.82z"/>
-                <path fill-rule="evenodd" d="M12.786 1.072C11.188.752 9.084.71 7.646 2.146A.5.5 0 0 0 7.5 2.5v11a.5.5 0 0 0 .854.354c.843-.844 2.115-1.059 3.47-.92 1.344.14 2.66.617 3.452 1.013A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.276-.447L15.5 2.5l.224-.447-.002-.001-.004-.002-.013-.006-.047-.023a12.582 12.582 0 0 0-.799-.34 12.96 12.96 0 0 0-2.073-.609zM15 2.82v9.908c-.846-.343-1.944-.672-3.074-.788-1.143-.118-2.387-.023-3.426.56V2.718c1.063-.929 2.631-.956 4.09-.664A11.956 11.956 0 0 1 15 2.82z"/>
-              </svg>
+              <img src = "{% static 'book.svg' %}" style="height: 5rem; width: auto;">
               <h2 style="padding-top: 2rem;">Education Provided</h2>
               <p style="padding-bottom: 1.1rem;">We work to provide education about vaccines and screenings to people</p>
-              <h1>53</h1>
+              <h1>20+</h1>
               
             </div>
              
             <div class = "col-sm-3"  >
-              <svg class="bi bi-check-all" width="5em" height="5em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" d="M8.97 4.97a.75.75 0 0 1 1.071 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L2.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093L8.95 4.992a.252.252 0 0 1 .02-.022zm-.92 5.14l.92.92a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 1 0-1.091-1.028L9.477 9.417l-.485-.486-.943 1.179z"/>
-              </svg>
+              <img src = "{% static 'vaccine.svg' %}" style="height: 5rem; width: auto;">
               <h2 style="padding-top: 2rem;">Vaccines Provided</h2>
               <p style="padding-bottom: 2.8rem;"> We work to provide increase access to HPV vaccines</p>
-              <h1>53</h1>
+              <h1>53+</h1>
               
 
           
             </div>
 
             <div class = "col-sm-3"  >
-              <svg class="bi bi-file-check" width="5em" height="5em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                <path d="M9 1H4a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V8h-1v5a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1h5V1z"/>
-                <path fill-rule="evenodd" d="M15.854 2.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 0 1 .708-.708L12.5 4.793l2.646-2.647a.5.5 0 0 1 .708 0z"/>
-              </svg>
+              <img src = "{% static 'list.svg' %}" style="height: 5rem; width: auto;">
               <h2 style="padding-top: 2rem;">Assements Provided</h2>
               <p style="padding-bottom: 2.8rem;">We work to increase access to screening measures</p>
-              <h1>53</h1>
+              <h1>123+</h1>
               
             
             </div>
 
             <div class = "col-sm-3"  >
-              <svg class="bi bi-people-fill" width="5em" height="5em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" d="M7 14s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1H7zm4-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-5.784 6A2.238 2.238 0 0 1 5 13c0-1.355.68-2.75 1.936-3.72A6.325 6.325 0 0 0 5 9c-4 0-5 3-5 4s1 1 1 1h4.216zM4.5 8a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5z"/>
-              </svg>
+              <img src = "{% static 'talking.svg' %}" style="height: 5rem; width: auto;">
 
               <h2 style="padding-top: 2rem;">Commmunities Benefited</h2>
               <p> We work all across the globe to provide to under-resourced areas increased access to HPV vaccines and education </p>
-              <h1>53</h1>
+              <h1>5+</h1>
               
             
             </div>
     
     </div>
+  </div>
+    
 
 </div>
-
+<!---
 <div class = "current">
   <div class = "row">
  
@@ -209,12 +207,11 @@
 
 </div>
 
-</div>
+</div> -->
 
-<div id="contact">
 <div class ="col-12 text-center narrow">
-  <h1> Contact Us</h1>
-  <p>Email us at ccapacrossthemap@gmail.com or <a href ="{% url 'contact' %}"> fill the form </a> for partnership and project inquiries</p>
+  <div class="underline"><h1 style="color: #2fbcbb;"> Contact Us</h1> </div>
+  <p style = "padding-top: 1rem;">Email us at ccapacrossthemap@gmail.com or <a href ="{% url 'contact' %}"> fill the form </a> for partnership and project inquiries</p>
 
 </div>
   

@@ -7,10 +7,11 @@
 <div class="container-fluid" style="padding-bottom: 20rem;">
     
     <div class="col-md-8 offset-md-2">
-        <div class = "underline"> <h1 style="color: #2fbcbb; padding-top: 5rem; "> Projects </h1> </div>
+        <div class = "underline"> <h1 style="color: #2fbcbb; padding-top: 5rem; "> {{ posts.0.project.title }} </h1> </div>
         <hr>
+
         {% for post in posts %}
-        <h2><a href="{% url 'project_posts' post.uuid %}">{{ post.title }}</a></h2>
+        <h2><a href="{% url 'projects_index' post.project.uuid post.post_number %}">{{ post.title }}</a></h2>
         <p><i>{{ post.description }} </i></p>
         {% endfor %}
     </div>
