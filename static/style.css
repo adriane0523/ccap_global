@@ -101,9 +101,9 @@ footer img{
 }
 
 /* bio */
-.hr_inline_header{
-  display: inline;
-  width: 40%;
+.tooltip1{
+  background-color: white;
+
 }
 
 /*============= COURSE SECTION =============*/
