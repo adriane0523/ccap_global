@@ -5,20 +5,19 @@
 
 <div class="container-fluid" style="padding-bottom: 20rem;">
     
-    <div class="col-md-10 offset-md-1">
+    <div class="col-md-10 offset-md-1" style="align-content:center;text-align:center">
 
         <h1 style="padding-top: 5rem;text-align:center">
             <hr>Meet the Team<hr>
         </h1>
-        <h2  style="padding-top: 3rem;text-align:center">Board Members</h2><hr>
-        {% for group in groups %}
+        <h2  style="padding-top: 2rem;text-align:center">Board</h2><br/>
+        {% for group in board %}
             <div class="row">
             {% for person in group %}
-                {% if person.board is True %}
                 <div class="col-4" >
                     <a data-toggle="collapse" href="#collapse{{ person.bid }}">
-                        <div style="text-align:center;">
-                            <img src="{{ person.headshot.url }}" style="width:225;height:300" class="rounded-circle">   
+                        <div style="text-align:center;color:black">
+                            <img src="{{ person.headshot.url }}" style="width:225px;height:300px" class="rounded-circle">   
                             <h3 class="bio">{{ person.name }}</h3>
                             <bold> {{ person.role }}</bold>
                             <br/>
@@ -29,22 +28,19 @@
                     <div class="collapse" id="collapse{{ person.bid }}">
                         <small>{{ person.bio }}</small>
                     </div>
-                </div>
-                {% endif %} 
+                </div> 
             {% endfor %}
             </div>
         {% endfor %}
         <hr>
-        <a id="a_pastmembers" style="color:black" data-toggle="collapse" href="#pastMembersCollapse" onclick="switchvisibility()">Meet the past team members</a>
-        <div class="collapse" id="pastMembersCollapse">
-            <h2  style="padding-top: 2rem;text-align:center">Past Members</h2><hr>
+        {% if groups %}
+        <h3  style="padding-top: 1rem;text-align:center">Members</h3><br/>
             {% for group in groups %}
-                <div class="row">
+            <div class="row">
                 {% for person in group %}
-                    {% if person.past is True %}
                     <div class="col-4" >
                         <a data-toggle="collapse" href="#collapse{{ person.bid }}">
-                            <div style="text-align:center;">
+                            <div style="text-align:center;color:black">
                                 <img src="{{ person.headshot.url }}" style="width:225px;height:300px" class="rounded-circle">   
                                 <h3 class="bio">{{ person.name }}</h3>
                                 <bold> {{ person.role }}</bold>
@@ -57,10 +53,63 @@
                             <small>{{ person.bio }}</small>
                         </div>
                     </div>
-                    {% endif %} 
+                    
+                {% endfor %}
+            </div>
+            {% endfor %}
+        {% endif %}
+
+        <a id="a_pastmembers" style="color:black;" data-toggle="collapse" href="#pastMembersCollapse" onclick="switchvisibility()">Meet the past team members</a>
+        <div class="collapse" id="pastMembersCollapse">
+            <h2  style="padding-top: 2rem;text-align:center">Past Members</h2><hr>
+            <h3  style="padding-top: 1rem;text-align:center">Board</h2><br/>
+            {% for group in pastBoard %}
+                <div class="row">   
+                {% for person in group %}
+                    <div class="col-4" >
+                        <a data-toggle="collapse" href="#collapse{{ person.bid }}">
+                            <div style="text-align:center;color:black">
+                                <img src="{{ person.headshot.url }}" style="width:225px;height:300px" class="rounded-circle">   
+                                <h3 class="bio">{{ person.name }}</h3>
+                                <bold> {{ person.role }}</bold>
+                                <br/>
+                                <bold> {{ person.startdate }}-{{ person.enddate }}</bold>
+
+                            </div>
+                        </a>
+                        <div class="collapse" id="collapse{{ person.bid }}">
+                            <small>{{ person.bio }}</small>
+                        </div>
+                    </div> 
                 {% endfor %}
                 </div>
             {% endfor %}
+            <hr>
+            {% if pastGroups %}
+            <h3  style="padding-top: 1rem;text-align:center">Members</h3><br/>
+                {% for group in pastGroups %}
+                <div class="row">
+                    {% for person in group %}
+                        <div class="col-4" >
+                            <a data-toggle="collapse" href="#collapse{{ person.bid }}">
+                                <div style="text-align:center;color:black">
+                                    <img src="{{ person.headshot.url }}" style="width:225px;height:300px" class="rounded-circle">   
+                                    <h3 class="bio">{{ person.name }}</h3>
+                                    <bold> {{ person.role }}</bold>
+                                    <br/>
+                                    <bold> {{ person.startdate }}-{{ person.enddate }}</bold>
+
+                                </div>
+                            </a>
+                            <div class="collapse" id="collapse{{ person.bid }}">
+                                <small>{{ person.bio }}</small>
+                            </div>
+                        </div>
+                        
+                    {% endfor %}
+                </div>
+                {% endfor %}
+            {% endif %}
             <button style="text-align:right" class="btn btn-light" data-toggle="collapse" href="#pastMembersCollapse" onclick="switchvisibility()">Hide Past Members</button>
         </div>
     </div>
