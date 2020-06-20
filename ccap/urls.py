@@ -25,8 +25,10 @@ urlpatterns = [
     path('', include("landingpage.urls")),
     path('contact/',include("sendmail.urls")),
     path('projects/',include("projects.urls")),
+    path('bios/',include("bios.urls")),
     path('events/',include("events.urls")),
     path('ckeditor/', include('ckeditor_uploader.urls')),
+    path('bios/', include("bios.urls")),
     
 ]
 
